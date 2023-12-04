@@ -83,9 +83,9 @@ Toque o documentário {documentary_name} no serviço de streaming {documentary_s
 Toque um documentário chamado {documentary_name} no serviço de streaming {documentary_streaming_service}.
 Toque um documentário do gênero {documentary_genre} no serviço de streaming {documentary_streaming_service}.
 Toque um documentário interessante do gênero {documentary_genre} no serviço de streaming {documentary_streaming_service}.
+Toque {documentary_name} , um documentário disponível no serviço de streaming {documentary_streaming_service}.
 Toque {documentary_name} da categoria de documentários no serviço de streaming {documentary_streaming_service}.
 Toque {documentary_name} de {country_name} no serviço de streaming {documentary_streaming_service}.
-Toque {documentary_name} , um documentário disponível no serviço de streaming {documentary_streaming_service}.
 documentário sobre a história da animação
 documentário sobre a história da arte
 documentário sobre a história da fotografia

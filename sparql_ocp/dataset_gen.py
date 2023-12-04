@@ -1,10 +1,10 @@
 # pip install sparqlwrapper
 # https://rdflib.github.io/sparqlwrapper/
 import os.path
-
 import random
-import regex
 import sys
+
+import regex
 from SPARQLWrapper import SPARQLWrapper, JSON
 from unidecode import unidecode
 
@@ -121,65 +121,65 @@ ENTITIES = {
     },
     "film_studio": {
         "P31": ["Q375336", "Q368290"]
-    } ,
+    },
     "youtube_channel": {
         "P31": ["Q17558136"]
-    } ,
+    },
 
     # streaming services
     "audiobook_streaming_service": {
         "P31": ["Q1644277"]  # audiobook_publisher
-    } ,
+    },
     "movie_streaming_service": {
         "P31": [
             "Q109509795",  # web broadcaster  - movie
         ]
-    } ,
+    },
     "tv_streaming_service": {
         "P31": [
             "Q10689397",  # television production company
         ]
-    } ,
+    },
     "video_streaming_service": {
         "P31": [
             "Q63241860", "Q122759350"
         ]
-    } ,
+    },
     "music_streaming_service": {
         "P31": [
             "Q15590336"
         ]
-    } ,
+    },
     "radio_streaming_service": {
         "P31": [
             "Q184973"
         ]
-    } ,
+    },
     "podcast_streaming_service": {
         "P31": [
             "Q24579448", "Q24581379"
         ]
-    } ,
+    },
 
     # genres
     "podcast_genre": {
         "P31": ["Q104822033"]
-    } ,
+    },
     "music_genre": {
         "P31": ["Q188451"]
-    } ,
+    },
     "film_genre": {
         "P31": ["Q201658"]
-    } ,
+    },
     "book_genre": {
         "P31": ["Q223393"]
-    } ,
+    },
     "radio_drama_genre": {
         "P31": ["Q2933978"]
-    } ,
+    },
     "tv_genre": {
         "P31": ["Q15961987"]
-    } ,
+    },
     "audio_genre": {
         "P31": ["Q108676140"]
     },
@@ -253,6 +253,7 @@ def get_results(endpoint_url, query):
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     return sparql.query().convert()
+
 
 # get entities from wikidata
 for lang in LANGS:
@@ -370,7 +371,7 @@ def generate_samples(p, lang):
 for i in range(1):  # N times each template
     dataset += list(generate_samples(p, lang))
 
-with open(f"{p}/dataset.csv", "w") as f:
+with open(f"{os.path.dirname(p)}/dataset.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
         f.write(f"{label}, {sentence}\n")

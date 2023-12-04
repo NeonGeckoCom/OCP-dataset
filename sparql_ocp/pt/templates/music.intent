@@ -74,9 +74,9 @@ Você explorou a discografia de {artist_name} , especialmente {album_name}? Vale
 Você explorou além dos sucessos populares na discografia de {artist_name}?
 Você ouviu a apresentação ao vivo recente de {artist_name}? Foi fenomenal.
 Você ouviu a apresentação recente de {artist_name}? Eles tocaram {song_name} do álbum {album_name} e foi incrível.
+Você ouviu a última música de {artist_name} , {song_name} , do álbum {album_name}?
 Você ouviu a última música de {artist_name} do álbum {album_name}?
 Você ouviu a última música de {artist_name} no {music_music_streaming_service}?
-Você ouviu a última música de {artist_name} , {song_name} , do álbum {album_name}?
 Você ouviu o lançamento mais recente de {artist_name} , especialmente a faixa {song_name} do álbum {album_name}?
 Você ouviu o lançamento recente de {artist_name} no {music_music_streaming_service}?
 Você ouviu o último álbum de {artist_name}? A faixa {song_name} é marcante.
