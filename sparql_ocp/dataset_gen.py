@@ -87,10 +87,15 @@ ENTITIES = {
         "P31": ["Q226730"]
     },
     "movie_name": {
-        "P31": ["Q11424",
-                "Q24869",
-                "Q7510990",
-                "Q200092",
+        "P31": ["Q11424",  # film
+                "Q24869",  # feature-film
+                "Q7510990",  # portuguese-language-films
+                "Q200092",  # horror film
+                "Q2484376",  # thriller film
+                "Q471839",  # scifi film
+                "Q517386", # live action
+                "Q188473", # action
+               # "Q28968258", # computer animated film
                 "Q848512"  # sound film / opposite of silent
                 ]
     },
@@ -124,6 +129,12 @@ ENTITIES = {
     },
     "youtube_channel": {
         "P31": ["Q17558136"]
+    },
+    "audiobook_narrator": {
+        "P106": ["Q20856740"]
+    },
+    "book_author": {
+        "P106": ["Q6625963", "Q36180"]
     },
 
     # streaming services
@@ -257,6 +268,7 @@ def get_results(endpoint_url, query):
 
 # get entities from wikidata
 for lang in LANGS:
+    break
     base = f"{os.path.dirname(__file__)}/{lang}"
     os.makedirs(base, exist_ok=True)
 
