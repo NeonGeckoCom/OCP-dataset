@@ -1,6 +1,7 @@
 import random
 import json
 
+# OVOS datasets from https://github.com/OpenVoiceOS/ovos-datasets
 csv_path = f"/home/miro/PycharmProjects/OCP_sprint/OCP-dataset/dataset.csv"
 q1 = f"/home/miro/PycharmProjects/OCP_sprint/OCP-dataset/yes_no.txt"
 q2 = "/home/miro/PycharmProjects/OCP_sprint/OCP-dataset/raw_questions_0.7.0a1.txt"

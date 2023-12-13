@@ -1,17 +1,77 @@
 import os.path
+
 import random
+from unidecode import unidecode
 
-from ocp_nlp.features import KeywordFeatures
 
-dataset = []
+def load_entities(path, lang):
+    ents = { }
+
+    # non wikidata entity list - manually maintained by users
+    for e in os.listdir(f"{path}/manual_entities/{lang}"):
+        with open(f"{path}/manual_entities/{lang}/{e}") as f:
+            samples = f.read().split("\n")
+            ents[e.replace(".entity", "").split("_Q")[0]] = samples
+
+    # from sparql queries - auto generated
+    for f in os.listdir(f"{path}/sparql_ocp/{lang}"):
+        if not f.endswith(".entity"):
+            continue
+        # normalize and map to slots
+        n = f.replace(".entity", "").split("_Q")[0]
+
+        if n not in ents:
+            ents[n] = []
+        with open(f"{path}/sparql_ocp/{lang}/{f}") as fi:
+            for s in fi.read().split("\n"):
+                if s:
+                    s = unidecode(s)
+                    ents[n].append(s)
+
+    return ents
+
+
+def load_templates(path, lang):
+    path = f"{path}/templates/{lang}"
+    ents = {}
+    with open(f"{path}/generic.intent") as f:
+        GENERIC = f.read().split("\n")
+    with open(f"{path}/generic_video.intent") as f:
+        GENERIC2 = f.read().split("\n")
+    for f in os.listdir(path):
+        if f == "generic.intent":
+            continue
+        n = f.replace(".intent", "")
+        if n not in ents:
+            ents[n] = []
+        with open(f"{path}/{f}") as fi:
+            for s in fi.read().split("\n"):
+                if s.startswith("#") or not s.strip():
+                    continue
+                ents[n].append(s)
+        if n not in ["game", "movie", "series", "short_film", "silent_movie",
+                     "video", "tv_channel", "comic", "bw_movie", "bts",
+                     "anime", "cartoon"]:
+            for g in GENERIC:
+                ents[n].append(g.replace("{query}", "{" + n + "_genre}"))
+                ents[n].append(g.replace("{query}", "{" + n + "_name}"))
+        if n in ["movie", "series", "short_film", "silent_movie",
+                 "video", "tv_channel", "comic", "bw_movie", "bts",
+                 "anime", "cartoon"]:
+            for g in GENERIC2:
+                ents[n].append(g.replace("{query}", "{" + n + "_genre}"))
+                ents[n].append(g.replace("{query}", "{" + n + "_name}"))
+    return ents
+
+
+p = os.path.dirname(__file__)
+lang = "en"
+ents = load_entities(p, lang)
+templs = load_templates(p, lang)
 
 
 # gen dataset, templates gathered manually from chatgpt
-def generate_samples(p, lang):
-    m = KeywordFeatures(lang)
-    ents = m.load_entities(p)
-    templs = m.load_templates(p)
-
+def generate_samples():
     for media_type, templates in templs.items():
         for t in templates:
             t = t.rstrip(".!?,;:")
@@ -31,12 +91,9 @@ def generate_samples(p, lang):
                 print("bad template", t)
 
 
-p = os.path.dirname(__file__)
-lang = "en"
-for i in range(1):  # N times each template
-    dataset += list(generate_samples(p, lang))
+dataset = list(generate_samples())
 
-with open(f"{os.path.dirname(p)}/dataset.csv", "w") as f:
+with open("dataset.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
         f.write(f"{label}, {sentence}\n")
@@ -51,11 +108,6 @@ for root, folders, files in os.walk(os.path.dirname(__file__)):
             lines = set(fi.read().split("\n"))
         with open(f"{root}/{f}", "w") as fi:
             fi.write("\n".join(sorted(lines)))
-
-
-m = KeywordFeatures(lang)
-ents = m.load_entities(p)
-
 
 with open("ocp_entities.csv", "w") as f:
     f.write("label,entity\n")
