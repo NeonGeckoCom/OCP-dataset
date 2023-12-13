@@ -93,7 +93,7 @@ def generate_samples():
 
 dataset = list(generate_samples())
 
-with open("dataset.csv", "w") as f:
+with open("ocp_media_types_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
         f.write(f"{label}, {sentence}\n")
@@ -109,7 +109,7 @@ for root, folders, files in os.walk(os.path.dirname(__file__)):
         with open(f"{root}/{f}", "w") as fi:
             fi.write("\n".join(sorted(lines)))
 
-with open("ocp_entities.csv", "w") as f:
+with open("ocp_entities_v0.csv", "w") as f:
     f.write("label,entity\n")
     for ent, samples in ents.items():
         for s in samples:

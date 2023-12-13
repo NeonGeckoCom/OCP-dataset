@@ -32,7 +32,7 @@ print(len(questions), len(pb))
 
 lines = [f"other,{l}" for l in questions] + [f"OCP,{l}" for l in pb]
 random.shuffle(lines)
-with open("playback.csv", "w") as f:
+with open("ocp_sentences_v0.csv", "w") as f:
     f.write("intent_type,utterance\n")
     for l in lines:
         f.write(l + "\n")
