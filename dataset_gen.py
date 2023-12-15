@@ -96,10 +96,6 @@ dataset = list(generate_samples())
 with open("ocp_media_types_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
-        if label == "radio_drama":
-            label = "radio_drama_name"
-        if label == "porn_site":
-            label = "porn_streaming_service"
         f.write(f"{label}, {sentence}\n")
 
 # dedup files
@@ -115,6 +111,10 @@ for root, folders, files in os.walk(os.path.dirname(__file__)):
 
 with open("ocp_entities_v0.csv", "w") as f:
     f.write("label,entity\n")
-    for ent, samples in ents.items():
+    for label, samples in ents.items():
+        if label == "radio_drama":
+            label = "radio_drama_name"
+        if label == "porn_site":
+            label = "porn_streaming_service"
         for s in samples:
-            f.write(f"{ent},{s}\n")
+            f.write(f"{label},{s}\n")
