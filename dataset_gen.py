@@ -96,6 +96,10 @@ dataset = list(generate_samples())
 with open("ocp_media_types_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
+        if label == "radio_drama":
+            label = "radio_drama_name"
+        if label == "porn_site":
+            label = "porn_streaming_service"
         f.write(f"{label}, {sentence}\n")
 
 # dedup files
