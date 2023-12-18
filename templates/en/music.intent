@@ -2,7 +2,12 @@ Activate a laid-back music playlist.
 Activate a personally curated music playlist.
 Activate a {media_type_music} playlist
 Activate an uplifting music playlist.
+Activate the neural pathways with {album_name} on {music_streaming_service}.
 Add {song_name} to my {playlist_name} on {music_streaming_service} .
+Allow me to request the refined {song_name} by {artist_name} on {music_streaming_service}.
+Allow me to request the refined {song_name} from {artist_name} on {music_streaming_service}.
+Back in my day, we used to enjoy {song_name} from {artist_name} on {music_streaming_service}.
+Back when I was a lad, we'd enjoy {song_name} from {artist_name} on {music_streaming_service}.
 Begin a calming music playlist.
 Begin a curated music playlist.
 Begin a mood-enhancing music playlist.
@@ -31,6 +36,7 @@ Begin streaming {album_name} by {artist_name} on {music_streaming_service} for m
 Begin streaming {album_name} by {artist_name} on {music_streaming_service} immediately.
 Begin streaming {album_name} by {artist_name} on {music_streaming_service} right away.
 Begin streaming {album_name} by {artist_name} on {music_streaming_service} right now.
+Begin the analysis of {song_name} by {artist_name} on {music_streaming_service}.
 Begin your day with a relaxing melody.
 Begin {album_name} by {artist_name} in {music_streaming_service} .
 Begin {album_name} by {artist_name} in {music_streaming_service} for me.
@@ -40,14 +46,27 @@ Begin {album_name} by {artist_name} in {music_streaming_service} right away.
 Begin {album_name} by {artist_name} in {music_streaming_service} right now.
 Begin {audio_streaming_service} and listen to {album_name} by {artist_name} .
 Begin {audio_streaming_service} and play {artist_name} 's {album_name} .
+Blast that {music_genre} playlist, like, now!
+Blast that {song_name} by {artist_name} on {music_streaming_service}!
+Bring back the good old days with a nostalgic {music_genre} playlist.
+Can we listen to {song_name} by {artist_name} on {music_streaming_service}?
+Can we listen to {song_name} by {artist_name}? Pretty please!
+Can we please have {song_name} by {artist_name} on {music_streaming_service}?
 Can you cue up the music score for the film directed by {movie_director} on {music_streaming_service}?
 Can you cue up the music score for the movie by {movie_director} on {music_streaming_service}?
 Can you cue up the music score for the movie directed by {movie_director} on {music_streaming_service}?
+Can you find me a dope {music_genre} playlist, like, immediately?
+Can you find {album_name} and transport me to the past?
+Can you find {album_name}? It's a blast from the past.
+Can you find {song_name} by {artist_name}? It's one of my favorites.
+Can you play a random track?
+Can you play something for me?
 Can you play something from {media_type_music} ?
 Can you play the music from the film by {movie_director} on {music_streaming_service}?
 Can you play the music from the movie by {movie_director} on {music_streaming_service}?
 Can you play the song {song_name} by {artist_name} from the album {album_name} ?
 Can you play the song {song_name} from {album_name} by {artist_name} on {music_streaming_service} ?
+Can you play {album_name} on {music_streaming_service} for me?
 Can you play {media_type_music} for me?
 Can you play {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} ?
 Can you play {song_name} from the album {album_name} by {artist_name} on {music_streaming_service} for me?
@@ -57,15 +76,19 @@ Can you play {song_name} from {album_name} by {artist_name} on {music_streaming_
 Can you play {song_name} from {playlist_name} by {artist_name} ?
 Can you play {song_name} from {playlist_name} by {artist_name} on {music_streaming_service} , please?
 Can you play {song_name} from {playlist_name} by {artist_name} on {music_streaming_service} for me?
+Can you randomly select and play a track?
 Can you search for the latest {media_type_music} releases?
 Can you search for {media_type_music} content?
 Can you start {album_name} and play the song {song_name} by {artist_name} on {music_streaming_service} ?
 Can you start {playlist_name} and play the song {song_name} by {artist_name} on {music_streaming_service} ?
 Can you start {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} ?
+Can you surprise me and play something random?
 Celebrate the artistry of your favorite musicians through a seamless music streaming session.
 Certainly! Here are various ways you can express play a song:
+Chill out and play {song_name} from {artist_name} on {music_streaming_service}, man.
 Choose a new and unfamiliar {media_type_music} .
 Choose a new and unheard {media_type_music} .
+Choose a song at random and play it.
 Choose a tune I've never explored.
 Choose a {media_type_music} I haven't discovered.
 Choose a {media_type_music} I've never explored.
@@ -74,13 +97,27 @@ Choose a {media_type_music} I've never heard.
 Choose a {media_type_music} I've yet to explore.
 Choose a {media_type_music} that's new to me.
 Choose a {media_type_music} that's new to my ears.
+Command the initiation of {song_name} by {artist_name} on {music_streaming_service}.
 Commence a music playlist.
 Commence playback of {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} .
 Commence playback of {song_name} by {artist_name} from {album_name} on {music_streaming_service} .
 Commence playing {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} .
 Commence playing {song_name} by {artist_name} off {album_name} on {music_streaming_service} .
+Commence the playback of {song_name} by {artist_name} on {music_streaming_service}.
 Commence {media_type_music}
 Commence {media_type_music} playback.
+Conduct a sonic exploration of {song_name} from {artist_name} on {music_streaming_service}.
+Conduct a sonic observation of {song_name} from {artist_name} on {music_streaming_service}.
+Conduct an auditory exploration with {playlist_name} on {music_streaming_service}.
+Could you find {album_name}? It's known for its artistic value.
+Could you find {song_name} by {artist_name}? It's rather delightful.
+Could you play something at random, please?
+Could you play something different?
+Could you play something for a change?
+Could you play the classic {song_name} from {artist_name} on {music_streaming_service}?
+Could you please start the charming {song_name} from {artist_name} on {music_streaming_service}?
+Could you please start the lovely {song_name} from {artist_name} on {music_streaming_service}?
+Crank up the volume with {song_name} by {artist_name} on {music_streaming_service}.
 Create a dynamic playlist with {song_name} and upbeat {music_genre} on {music_streaming_service} .
 Create a dynamic playlist with {song_name} and upbeat {music_genre} on {music_streaming_service} from {record_label} .
 Create a dynamic {playlist_name} with {song_name} and upbeat {music_genre} on {music_streaming_service} .
@@ -108,11 +145,17 @@ Cue up a chill music playlist.
 Cue up a feel-good music playlist.
 Cue up a handpicked music playlist.
 Cue up a song.
+Cue up {song_name} from {artist_name} on {music_streaming_service}, seriously.
+Dear, could you play that lovely {song_name} by {artist_name} on {music_streaming_service}?
+Dear, play that lovely {playlist_name} on {music_streaming_service}.
+Demand the execution of {song_name} from {artist_name} on {music_streaming_service}.
+Deploy {song_name} by {artist_name} on {music_streaming_service}.
 Did you catch the recent release from {artist_name} on {music_streaming_service} ?
 Did you catch {artist_name} 's latest track, {song_name} , from the album {album_name} ?
 Did you catch {artist_name} 's recent live performance? It was phenomenal.
 Did you catch {artist_name} 's recent performance? They played {song_name} from {album_name} , and it was amazing.
 Did you hear the latest song by {artist_name} from the album {album_name} ?
+Direct the initiation of {song_name} from {artist_name} on {music_streaming_service}.
 Discover new music in the {music_genre} category.
 Discover new music on {music_streaming_service} .
 Discover new music on {music_streaming_service} from {record_label} .
@@ -130,12 +173,19 @@ Dive into a zen music playlist.
 Dive into a {media_type_music}
 Dive into an inspiring music playlist.
 Elevate your mood with a curated playlist of your favorite tunes.
+Engage in a musical exploration featuring {song_name} from {artist_name} on {music_streaming_service}.
+Engage in a musical study featuring {song_name} from {artist_name} on {music_streaming_service}.
 Enjoy a music playlist.
 Enjoy a positive energy music playlist.
 Enjoy a soothing ambiance music playlist.
 Enjoy a tailored music playlist.
+Enjoy the gentle tunes of {music_genre} on {music_streaming_service}.
 Enjoy the rhythm of a catchy {media_type_music}
+Enjoy the sophisticated tunes of {music_genre} on {music_streaming_service}.
+Enjoy the vintage tunes of {music_genre} on {music_streaming_service}.
 Enjoy {music_genre} hits on {music_streaming_service} .
+Execute the command to play {song_name} by {artist_name} on {music_streaming_service}.
+Execute the order to play {album_name} on {music_streaming_service}.
 Experience the chart-topping hits of {music_genre} on {music_streaming_service} .
 Experience the magic of music without boundaries or limitations.
 Explore new albums on {music_streaming_service} .
@@ -162,6 +212,7 @@ Explore {music_streaming_service} for {music_genre} recommendations.
 Explore {record_label} 's collection of {music_genre} on {music_streaming_service} .
 Find a playlist of {music_genre} on {music_streaming_service} .
 Find a playlist of {music_genre} on {music_streaming_service} curated by {playlist_name} .
+Find a super fun {music_genre} playlist on {music_streaming_service}.
 Find a {music_genre} album released in the last month on {music_streaming_service} .
 Find a {music_genre} album released in the last month on {music_streaming_service} from {record_label} .
 Find a {music_genre} playlist for a chill evening on {music_streaming_service} .
@@ -190,30 +241,33 @@ Find and play a {media_type_music} I haven't encountered.
 Find and play a {media_type_music} I haven't explored.
 Find and play a {media_type_music} I haven't heard.
 Find me something good from {media_type_music} .
-Find me the music from the movie {movie_name}.
-Find me the music from the {music_genre} film {movie_name}.
+Find me the music from the movie {movie_name} .
+Find me the music from the {music_genre} film {movie_name} .
 Find some {media_type_music} hits.
 Find songs from {media_type_music} .
 Find the music from a {film_genre} film.
-Find the music from the film {movie_name} directed by {movie_director}.
+Find the music from the film {movie_name} directed by {movie_director} .
 Find the soundtrack of a film in the {music_genre} genre.
-Find the soundtrack of a movie in the {music_genre} genre directed by {movie_director}.
+Find the soundtrack of a movie in the {music_genre} genre directed by {movie_director} .
 Find the soundtrack of a movie in the {music_genre} genre.
 Find the soundtrack of a {music_genre} movie.
 Find {artist_name} top songs on {music_streaming_service} .
 Find {music_genre} tracks on {music_streaming_service} .
+Find {song_name} by {artist_name}, it's a classic!
 Fire up a custom music playlist.
 Fire up a music playlist.
 Fire up a song.
 Fire up a tranquil music playlist.
 Fire up an energetic music playlist.
 Fire up {media_type_music} .
+Fire up {song_name} by {artist_name} on {music_streaming_service}, man, it's righteous.
 Generate a playlist of {music_genre} tracks on {music_streaming_service} .
 Get a music playlist going.
 Get a song going.
 Get the chosen music playlist going.
 Get the energetic music playlist going.
 Get the music playlist rolling.
+Give me a dose of {music_genre}, like, right on.
 Give me a random audio adventure.
 Give me a random audio experience.
 Give me a random music track.
@@ -224,19 +278,19 @@ Give me a surprise music track.
 Give me a surprise playlist.
 Give me a surprise song.
 Give me some tunes.
-Give me the music from a film directed by {movie_director}.
-Give me the music from a movie directed by {movie_director}.
+Give me the music from a film directed by {movie_director} .
+Give me the music from a movie directed by {movie_director} .
 Give me the music from a {music_genre} film.
-Give me the music from the film by {movie_director} on {music_streaming_service}.
-Give me the music from the film directed by {movie_director} on {music_streaming_service}.
-Give me the music from the film {movie_name} directed by {movie_director}.
-Give me the music from the film {movie_name}.
-Give me the music from the movie {movie_name}.
-Give me the music score for the film directed by {movie_director} on {music_streaming_service}.
-Give me the music score for the movie directed by {movie_director} on {music_streaming_service}.
-Give me the soundtrack of a movie by {movie_director}.
-Give me the soundtrack of a movie directed by {movie_director}.
-Give me the soundtrack of a movie in the {music_genre} genre directed by {movie_director}.
+Give me the music from the film by {movie_director} on {music_streaming_service} .
+Give me the music from the film directed by {movie_director} on {music_streaming_service} .
+Give me the music from the film {movie_name} .
+Give me the music from the film {movie_name} directed by {movie_director} .
+Give me the music from the movie {movie_name} .
+Give me the music score for the film directed by {movie_director} on {music_streaming_service} .
+Give me the music score for the movie directed by {movie_director} on {music_streaming_service} .
+Give me the soundtrack of a movie by {movie_director} .
+Give me the soundtrack of a movie directed by {movie_director} .
+Give me the soundtrack of a movie in the {music_genre} genre directed by {movie_director} .
 Give me the soundtrack of a {music_genre} movie.
 Have you checked out the new {music_genre} album by {artist_name} on {music_streaming_service} ?
 Have you checked out {song_name} by {artist_name} from the album {album_name} ? It's worth a listen.
@@ -253,7 +307,19 @@ Have you heard {song_name} from {album_name} by {artist_name} ? It's been on my 
 Have you listened to the latest album by {artist_name} ? The track {song_name} is a standout.
 Have you listened to {artist_name} 's latest release, especially the track {song_name} from {album_name} ?
 Have you listened to {song_name} from {album_name} by {artist_name} ?
+Hey man, throw on that chill {playlist_name} on {music_streaming_service}.
+Hey, can we play {song_name} by {artist_name} on {music_streaming_service} now?
+Hey, man, let's vibe to {song_name} by {artist_name} on {music_streaming_service}.
+Hit me with a random track, please.
+Hit me with {song_name} by {artist_name} on {music_streaming_service}, please!
 Hit play on a song.
+Hook me up with the latest track from {artist_name}.
+How 'bout we play {song_name} from {artist_name} on {music_streaming_service}, man?
+How 'bout you start the timeless {song_name} from {artist_name} on {music_streaming_service}?
+How about playing a random tune?
+How about playing something at random?
+How about playing something random?
+How about playing something unexpected?
 Hunt for tracks in the {music_genre} realm on {music_streaming_service} .
 I came across {album_name} by {artist_name} on {music_streaming_service} , have you explored it yet?
 I came across {artist_name} 's new album, and I'm curious if you've heard {song_name} from it.
@@ -284,6 +350,8 @@ I recently stumbled upon {artist_name} 's {album_name} , and I'm loving the vibe
 I stumbled upon {artist_name} 's discography, and {song_name} from {album_name} has become a favorite of mine.
 I stumbled upon {song_name} by {artist_name} from the album {album_name} , and it's become a favorite of mine.
 I stumbled upon {song_name} by {artist_name} from the album {album_name} , and it's been on my playlist non-stop.
+I wanna hear {song_name} by {artist_name} again, okay?
+I wanna hear {song_name} from {artist_name} on {music_streaming_service}, okay?
 I want to enjoy {song_name} from the album {album_name} by {artist_name} can you play it?
 I want to hear {artist_name} 's {album_name} , and make sure to play the track {song_name} on {music_streaming_service} .
 I want to hear {artist_name} 's {album_name} , and specifically, the track {song_name} on {music_streaming_service} .
@@ -295,6 +363,7 @@ I want to listen to {song_name} by {artist_name} from the album {album_name} on 
 I want to listen to {song_name} from the album {album_name} by {artist_name} .
 I was browsing through music recommendations, and {artist_name} 's {album_name} was highly praised, especially the track {song_name} .
 I was introduced to {artist_name} 's {album_name} recently, and now I can't get enough of it.
+I would appreciate it if you could play the distinguished {song_name} from {artist_name} on {music_streaming_service}.
 I'd like to hear the song {song_name} from the album {album_name} by {artist_name} .
 I'd like to hear {song_name} from the album {album_name} by {artist_name} .
 I'd like to hear {song_name} from {album_name} by {artist_name} on {music_streaming_service} .
@@ -348,6 +417,7 @@ I've been immersed in {music_genre} lately, and {artist_name} 's {album_name} ha
 I've been immersing myself in {music_genre} recently, and {artist_name} 's {album_name} is a standout.
 I've been impressed by {artist_name} 's work, particularly {album_name} , have you given it a listen?
 I've been listening to {artist_name} across various albums each one has its own charm.
+Immerse yourself in the cultured sounds of {music_genre} on {music_streaming_service}.
 Immerse yourself in the harmonies of {album_name} on {music_streaming_service} .
 Indulge in the beats of {song_name} by {artist_name} on {music_streaming_service} .
 Indulge in the nostalgia of classic hits and timeless melodies.
@@ -362,11 +432,23 @@ Initiate playback of {album_name} by {artist_name} .
 Initiate playback of {album_name} from {artist_name} .
 Initiate playback of {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} .
 Initiate playing a music playlist.
+Initiate the auditory examination of {song_name} by {artist_name} on {music_streaming_service}.
+Initiate the auditory experiment with {song_name} by {artist_name} on {music_streaming_service}.
+Initiate the experiment with {music_genre} sounds, quickly!
+Initiate the playback of a patriotic {music_genre} playlist.
 Initiate {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} .
 Initiate {song_name} by {artist_name} from {album_name} on {music_streaming_service} .
+Inject {song_name} by {artist_name} into the auditory cortex, now!
+Instruct the forces to listen to {song_name} from {artist_name} on {music_streaming_service}.
+Instruct the troops to play {song_name} from {artist_name} on {music_streaming_service}.
 Introduce me to a new song.
+Issue the command to play the official army anthem.
+Issue the directive to listen to {song_name} by {artist_name} on {music_streaming_service}.
 Kick off a music playlist.
 Kickstart {media_type_music} now.
+Kindly initiate the playback of the sophisticated {song_name} from {artist_name} on {music_streaming_service}.
+Kindly play the sophisticated {playlist_name} on {music_streaming_service}.
+Kindly play the sophisticated {song_name} by {artist_name} on {music_streaming_service}.
 Launch a favorite music playlist.
 Launch a motivating music playlist.
 Launch a music playlist.
@@ -379,10 +461,17 @@ Launch {music_streaming_service} and play {song_name} from the album {album_name
 Let the motivating music playlist play.
 Let the music playlist play.
 Let the selected music playlist play.
+Let's abide and listen to {song_name} from {artist_name} on {music_streaming_service}.
+Let's enjoy the beautiful {song_name} by {artist_name} on {music_streaming_service}, shall we?
+Let's enjoy the delightful {song_name} by {artist_name} on {music_streaming_service}, shall we?
+Let's go down memory lane with {song_name} by {artist_name} on {music_streaming_service}.
+Let's indulge in some refined {music_genre} on {music_streaming_service}.
+Let's jam to {song_name} by {artist_name}, it's my favorite!
 Let's kick off with some {media_type_music} .
 Let's listen to a music playlist.
 Let's listen to a song.
 Let's listen to music by {artist_name} .
+Let's listen to some good ol' {music_genre} on {music_streaming_service}.
 Let's listen to the music of {artist_name} .
 Let's listen to the {album_name} album from {artist_name} on {music_streaming_service} .
 Let's listen to {album_name} from {artist_name} on {music_streaming_service} .
@@ -390,29 +479,63 @@ Let's listen to {album_name} from {artist_name} on {music_streaming_service} imm
 Let's listen to {album_name} from {artist_name} on {music_streaming_service} right away.
 Let's listen to {album_name} from {artist_name} on {music_streaming_service} right now.
 Let's listen to {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} .
+Let's listen to {song_name} from {artist_name} on {music_streaming_service}, Mom!
+Let's mix it up a bit, play something random.
 Let's play the {album_name} album by {artist_name} in {music_streaming_service} .
 Let's play the {album_name} album by {artist_name} in {music_streaming_service} now.
 Let's play the {album_name} album by {artist_name} on {music_streaming_service} for me.
 Let's play the {album_name} album by {artist_name} on {music_streaming_service} immediately.
 Let's play {album_name} by {artist_name} in {music_streaming_service} .
 Let's play {media_type_music} now.
+Let's reminisce and play {song_name} by {artist_name} on {music_streaming_service}.
+Let's reminisce with some classic {music_genre} on {music_streaming_service}.
+Let's roll with {album_name} on {music_streaming_service}, man.
+Let's roll with {song_name} by {artist_name} on {music_streaming_service}, man.
 Let's start the music with {media_type_music} .
 Listen to a {media_type_music} I never heard before
 Listen to random {media_type_music}
+Listen to some laid-back {music_genre}, you know?
+Listen to that delightful {song_name} by {artist_name} on {music_streaming_service}, my love.
+Listen to the best {music_genre} song ever, pretty please!
+Listen to the enchanting {song_name} by {artist_name} on {music_streaming_service}, my love.
+Listen to the golden oldie {song_name} by {artist_name} on {music_streaming_service}, youngster.
+Listen to the good ol' {song_name} by {artist_name} on {music_streaming_service}, young one.
+Listen to the harmonious {song_name} by {artist_name}, my good sir.
+Listen to the sonic waves of {song_name} by {artist_name} for an explosive reaction.
+Listen to the soothing sounds of {song_name} by {artist_name}, dear.
+Listen to the timeless {song_name} by {artist_name}, my lad.
 Listen to {album_name} by {artist_name} on {music_streaming_service} .
 Listen to {album_name} on {music_streaming_service} .
+Listen to {album_name} on {music_streaming_service}, quick!
+Listen to {playlist_name} on {music_streaming_service}, it's the dude's choice.
+Listen to {song_name} by {artist_name} on {music_streaming_service}, duh!
+Listen to {song_name} by {artist_name} on {music_streaming_service}, it really ties the room together.
+Listen to {song_name} by {artist_name} on {music_streaming_service}, seriously!
+Listen to {song_name} by {artist_name}, soldier!
 Look for tracks in {media_type_music} .
 Look up {media_type_music} for me.
 Loop through {artist_name} 's musical catalog on {music_streaming_service} .
+Man, play that {playlist_name} on {music_streaming_service}, it's cool.
+Mandate the commencement of {song_name} by {artist_name} on {music_streaming_service}.
+March to the rhythm of a military-themed {playlist_name} on {music_streaming_service}.
+May I suggest the cultured {song_name} by {artist_name} on {music_streaming_service}?
 Mix and match the songs.
 Mix and shuffle the music.
+Mix it up and play a random song.
+Mix the musical concoction by blending {music_genre} tracks on {music_streaming_service}.
 Mix up my music selection.
 Mix up the music tracks.
 Mix up the songs.
+Mom, hit play on {song_name} from {artist_name} on {music_streaming_service}.
+Mom, let's put on {song_name} by {artist_name} on {music_streaming_service}!
 Open a cheerful music playlist.
 Open a music playlist.
 Open a relaxation music playlist.
 Open a selected music playlist.
+Order the activation of {song_name} by {artist_name} on {music_streaming_service}.
+Order the commencement of {song_name} from {artist_name} on {music_streaming_service}.
+Pick a song at random and play it for me.
+Pick a song randomly and play it.
 Play a beloved song.
 Play a catchy tune.
 Play a chart-topper.
@@ -443,6 +566,7 @@ Play a mix of random tracks.
 Play a mix of songs.
 Play a mood lifter.
 Play a mood-setting music playlist.
+Play a morale-boosting {music_genre} track on {music_streaming_service}.
 Play a motivating track.
 Play a music playlist.
 Play a music track.
@@ -455,13 +579,26 @@ Play a popular song.
 Play a popular track from {media_type_music} .
 Play a random assortment of songs.
 Play a random composition.
+Play a random melody, please.
 Play a random melody.
+Play a random song for a bit of variety.
+Play a random song for me.
+Play a random song from the library.
 Play a random song from the {music_genre} genre.
+Play a random song from your collection.
 Play a random song from {media_type_music} .
 Play a random song on {music_streaming_service} .
 Play a random song on {music_streaming_service} from {record_label} .
+Play a random song, I'm up for anything.
+Play a random song, surprise me!
 Play a random song.
+Play a random track from your collection.
+Play a random track, please.
 Play a random track.
+Play a random tune for me.
+Play a random tune from your selection.
+Play a random tune, let's see what we get.
+Play a random tune, surprise me!
 Play a recommended song.
 Play a relaxation music playlist.
 Play a relaxing track.
@@ -470,6 +607,7 @@ Play a song at random.
 Play a song for me.
 Play a song that's unfamiliar to me.
 Play a song that's unknown to me.
+Play a song, any will work.
 Play a song.
 Play a soulful tune.
 Play a timeless tune.
@@ -496,6 +634,10 @@ Play a {music_genre} mix for a road trip on {music_streaming_service} from {reco
 Play a {record_label} mix of {music_genre} and {music_genre} on {music_streaming_service} .
 Play an old favorite.
 Play an uplifting tune.
+Play any random song from the playlist.
+Play any random song, I'm open to anything.
+Play any song randomly, I'm in the mood for a surprise.
+Play any song, I'm in the mood for anything.
 Play me a tune I haven't heard before.
 Play me a tune I've yet to discover.
 Play music by {artist_name} .
@@ -523,8 +665,20 @@ Play some {music_genre} from {artist_name} on {music_streaming_service} .
 Play some {music_genre} from {record_label} on {music_streaming_service} .
 Play some {music_genre} on {music_streaming_service} .
 Play some {music_genre} on {music_streaming_service} from {record_label} .
+Play some {music_genre} on {music_streaming_service}, duh!
+Play something easygoing, maybe a {music_genre} tune.
+Play something from your selection.
+Play something lit, maybe a {music_genre} song.
+Play something random from the collection.
+Play something random, I trust your choice.
+Play something unexpected, I'm ready.
+Play something, I'm feeling spontaneous.
+Play something, I'm in the mood for a surprise.
+Play something, surprise me!
 Play songs from {artist_name} .
 Play songs similar to {artist_name} on {music_streaming_service} .
+Play that good ol' {song_name} from {artist_name} on {music_streaming_service}, sonny.
+Play that sweet {song_name} by {artist_name}, my dear.
 Play the album {album_name} by {artist_name} .
 Play the album {album_name} by {artist_name} on {music_streaming_service} .
 Play the album {album_name} by {artist_name} on {music_streaming_service} from {record_label} .
@@ -532,34 +686,47 @@ Play the album {album_name} from {artist_name} on {music_streaming_service} .
 Play the album {album_name} on {music_streaming_service} .
 Play the best of {artist_name} .
 Play the best tunes from {artist_name} .
+Play the charming {album_name} on {music_streaming_service}, would you?
+Play the charming {song_name} from {artist_name} on {music_streaming_service}, dearie.
+Play the coolest {music_genre} song ever!
+Play the delightful {playlist_name} on {music_streaming_service}, please.
+Play the eccentric {music_genre} composition to unleash the creative madness.
+Play the elegant {album_name} on {music_streaming_service}, if you please.
+Play the happy {playlist_name} on {music_streaming_service}.
+Play the heartwarming {song_name} from {artist_name} on {music_streaming_service}, dearie.
 Play the latest hits on {music_streaming_service} .
 Play the latest hits on {music_streaming_service} from {record_label} .
 Play the latest {album_name} on {music_streaming_service} .
 Play the latest {music_genre} releases on {music_streaming_service} .
 Play the most popular songs by {artist_name} .
-Play the movie soundtrack by {movie_director} on {music_streaming_service}.
-Play the movie soundtrack directed by {movie_director} on {music_streaming_service}.
+Play the movie soundtrack by {movie_director} on {music_streaming_service} .
+Play the movie soundtrack directed by {movie_director} on {music_streaming_service} .
 Play the music from a film in the {music_genre} genre.
 Play the music from a {music_genre} film.
-Play the music from the film {movie_name} directed by {movie_director}.
-Play the music from the movie by {movie_director} on {music_streaming_service}.
-Play the music from the movie directed by {movie_director} on {music_streaming_service}.
-Play the music from the {music_genre} film {movie_name}.
+Play the music from the film {movie_name} directed by {movie_director} .
+Play the music from the movie by {movie_director} on {music_streaming_service} .
+Play the music from the movie directed by {movie_director} on {music_streaming_service} .
+Play the music from the {music_genre} film {movie_name} .
+Play the official army playlist on {music_streaming_service}.
+Play the quantum harmonics of {music_genre} for heightened brain activity.
 Play the song {song_name} by {artist_name} .
 Play the song {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} .
 Play the song {song_name} on {music_streaming_service} .
 Play the song {song_name} on {music_streaming_service} from {record_label} .
-Play the soundtrack album of {movie_name} on {music_streaming_service}.
-Play the soundtrack of a film directed by {movie_director}.
-Play the soundtrack of a movie directed by {movie_director}.
-Play the soundtrack of a movie in the {music_genre} genre directed by {movie_director}.
+Play the soundtrack album of {movie_name} on {music_streaming_service} .
+Play the soundtrack of a film directed by {movie_director} .
+Play the soundtrack of a movie directed by {movie_director} .
+Play the soundtrack of a movie in the {music_genre} genre directed by {movie_director} .
 Play the soundtrack of a movie in the {music_genre} genre.
 Play the soundtrack of a {music_genre} movie.
-Play the soundtrack of the movie {movie_name} on {music_streaming_service}.
-Play the soundtrack of the movie {movie_name}.
-Play the soundtrack of {movie_name} from {music_streaming_service}.
-Play the soundtrack of {movie_name} on {music_streaming_service}.
-Play the soundtrack of {movie_name}.
+Play the soundtrack of the movie {movie_name} .
+Play the soundtrack of the movie {movie_name} on {music_streaming_service} .
+Play the soundtrack of {movie_name} .
+Play the soundtrack of {movie_name} from {music_streaming_service} .
+Play the soundtrack of {movie_name} on {music_streaming_service} .
+Play the super-duper fun {playlist_name} on {music_streaming_service}!
+Play the sweet {song_name} from {artist_name} on {music_streaming_service}, dearie.
+Play the tasteful {playlist_name} for a musical experience.
 Play the top song from {music_streaming_service} .
 Play the top songs by {artist_name} .
 Play the top songs of {artist_name} .
@@ -587,8 +754,14 @@ Play the {album_name} album, specifically the song {song_name} by {artist_name} 
 Play the {playlist_name} by {artist_name} on {music_streaming_service} .
 Play the {playlist_name} playlist on {music_streaming_service} .
 Play the {playlist_name} playlist with {song_name} and other {music_genre} hits on {music_streaming_service} from {record_label} .
+Play the {playlist_name} that matches the frequency of genius on {music_streaming_service}.
 Play the {song_name} from the album {album_name} on {music_streaming_service} .
 Play tracks from {artist_name} .
+Play whatever comes up, I'm open to anything.
+Play whatever feels right in the moment.
+Play whatever you think I'd like.
+Play whatever, I trust your choice.
+Play whatever, I'm open to anything.
 Play {album_name} by {artist_name} .
 Play {album_name} by {artist_name} from {record_label} on {music_streaming_service} .
 Play {album_name} by {artist_name} on {audio_streaming_service} .
@@ -600,6 +773,7 @@ Play {album_name} by {artist_name} on {music_streaming_service} right now.
 Play {album_name} from {artist_name} on {music_streaming_service} .
 Play {album_name} in its entirety by {artist_name} on {music_streaming_service} .
 Play {album_name} in its entirety by {artist_name} on {music_streaming_service} from {record_label} .
+Play {album_name} on {music_streaming_service}, it takes me back.
 Play {artist_name} 's greatest hits.
 Play {artist_name} 's most popular songs.
 Play {artist_name} 's songs.
@@ -614,6 +788,9 @@ Play {artist_name} greatest hits on {music_streaming_service} .
 Play {artist_name} greatest hits on {music_streaming_service} from {record_label} .
 Play {artist_name} latest hits on {music_streaming_service} .
 Play {artist_name} latest hits on {music_streaming_service} from {record_label} .
+Play {playlist_name} from the good old days on {music_streaming_service}.
+Play {playlist_name} on {music_streaming_service}, sonny boy.
+Play {playlist_name} on {music_streaming_service}, that's an order!
 Play {song_name} and similar {music_genre} hits on {music_streaming_service} .
 Play {song_name} and similar {music_genre} hits on {music_streaming_service} from {record_label} .
 Play {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} , please.
@@ -622,23 +799,37 @@ Play {song_name} by {artist_name} from {album_name} on {music_streaming_service}
 Play {song_name} by {artist_name} from {album_name} on {music_streaming_service} from {record_label} .
 Play {song_name} by {artist_name} off of the album {album_name} on {music_streaming_service} .
 Play {song_name} by {artist_name} on {music_streaming_service} .
+Play {song_name} by {artist_name} on {music_streaming_service}, dude, it's groovy.
+Play {song_name} by {artist_name} on {music_streaming_service}, it's my favorite!
+Play {song_name} by {artist_name} on {music_streaming_service}, like, right now.
 Play {song_name} by {artist_name} that's part of the album {album_name} on {music_streaming_service} .
+Play {song_name} by {artist_name}, it really ties the room together.
+Play {song_name} by {artist_name}, it's a mellow vibe.
+Play {song_name} by {artist_name}, it's a refined piece of art.
+Play {song_name} by {artist_name}, it's a true classic.
+Play {song_name} by {artist_name}, it's fire!
 Play {song_name} from the album {album_name} by {artist_name} on {music_streaming_service} .
 Play {song_name} from the album {album_name} on {music_streaming_service} .
 Play {song_name} from {album_name} by {artist_name} on {music_streaming_service} , please.
 Play {song_name} from {album_name} by {artist_name} on {music_streaming_service} .
+Play {song_name} from {artist_name} on {music_streaming_service} ASAP.
+Play {song_name} from {artist_name} on {music_streaming_service}, dude, seriously.
+Play {song_name} from {artist_name} on {music_streaming_service}, it's so cool!
+Play {song_name} from {artist_name} on {music_streaming_service}, pretty please!
 Play {song_name} on repeat on {music_streaming_service} .
+Please commence the playback of the elegant {song_name} by {artist_name} on {music_streaming_service}.
 Press play and discover new artists.
 Press play for a mix of upbeat tunes.
 Press play on a calming music playlist.
 Press play on a music playlist.
 Press play on a preferred music playlist.
 Press play on an upbeat music playlist.
-Provide the score for the film {movie_name} on {music_streaming_service}.
-Provide the score for the movie {movie_name} on {music_streaming_service}.
-Provide the score for {movie_name} on {music_streaming_service}.
-Provide the soundtrack album for {movie_name} on {music_streaming_service}.
-Provide the soundtrack for the film {movie_name} on {music_streaming_service}.
+Provide the score for the film {movie_name} on {music_streaming_service} .
+Provide the score for the movie {movie_name} on {music_streaming_service} .
+Provide the score for {movie_name} on {music_streaming_service} .
+Provide the soundtrack album for {movie_name} on {music_streaming_service} .
+Provide the soundtrack for the film {movie_name} on {music_streaming_service} .
+Pump up the jams with {song_name} from {artist_name} on {music_streaming_service}.
 Put a relaxing {media_type_music}
 Put on a beloved song.
 Put on a catchy tune.
@@ -684,8 +875,10 @@ Put on something I haven't explored before.
 Put on something I haven't heard before.
 Put on something I haven't heard yet.
 Put on the greatest hits of {artist_name} .
+Put on the groovy {album_name} on {music_streaming_service}.
 Put on the most popular tracks by {artist_name} .
 Put on {artist_name} 's music.
+Put on {song_name} by {artist_name} on {music_streaming_service}, like now!
 Put together a music playlist.
 Put together a positive vibes music playlist.
 Put together the perfect music playlist.
@@ -710,6 +903,7 @@ Randomly choose a music piece.
 Randomly choose a music track.
 Randomly pick a song to play.
 Randomly select a melody.
+Randomly select a song and play it.
 Randomly select a song to play.
 Recommend a diverse {music_genre} playlist on {music_streaming_service} .
 Recommend a diverse {music_genre} playlist on {music_streaming_service} from {record_label} .
@@ -728,12 +922,16 @@ Recommend a {playlist_name} with {song_name} and other {music_genre} hits on {mu
 Recommend a {record_label} mix of {music_genre} and {music_genre} on {music_streaming_service} .
 Recommend me an {music_genre} album on {music_streaming_service} .
 Recommended a song.
+Reminisce with the golden hits of {music_genre} on {music_streaming_service}.
 Replay {song_name} endlessly on {music_streaming_service} .
 Resume playing {song_name} by {artist_name} .
 Revel in sounds akin to {artist_name} on {music_streaming_service} .
 Search for popular {media_type_music} songs.
 Search for trending {media_type_music} music.
+Search for {album_name} on {music_streaming_service}, ASAP!
+Search for {album_name} on {music_streaming_service}, it's awesome!
 Search for {media_type_music} tracks.
+Select a random song and hit play.
 Set the atmosphere with a lively music playlist.
 Set the mood with a music playlist.
 Set the mood with a peaceful {media_type_music} playlist.
@@ -752,6 +950,12 @@ Shuffle a new and unheard {media_type_music}
 Shuffle a song I've yet to encounter.
 Shuffle a tune I've never explored.
 Shuffle a {media_type_music} that's unfamiliar to me.
+Shuffle and play a random song for me.
+Shuffle and play a song from the library.
+Shuffle and play a song on a whim.
+Shuffle and play a song, any will do.
+Shuffle and play a song.
+Shuffle and play something for me.
 Shuffle my favorite melodies.
 Shuffle my favorite tunes.
 Shuffle my music collection.
@@ -760,6 +964,8 @@ Shuffle my music.
 Shuffle my {music_genre} playlist on {music_streaming_service} .
 Shuffle some tunes.
 Shuffle the music queue.
+Shuffle the playlist and play a song.
+Shuffle the tracks and play whatever.
 Shuffle through my music library.
 Shuffle through my music.
 Shuffle through my song list.
@@ -773,6 +979,7 @@ Shuffle {media_type_music} I've never listened to.
 Shuffle {media_type_music} I've yet to discover.
 Shuffle {media_type_music} that's new to my ears.
 Shuffle {media_type_music} that's unfamiliar to me.
+Sonny, play that classic {song_name} by {artist_name} on {music_streaming_service}.
 Spin a track.
 Start a beloved song.
 Start a catchy tune.
@@ -864,6 +1071,7 @@ Start {audio_streaming_service} and enjoy {artist_name} 's {album_name} .
 Start {audio_streaming_service} and play {album_name} by {artist_name} .
 Start {media_type_music} for me.
 Start {song_name} by {artist_name} from the album {album_name} on {music_streaming_service} .
+Stimulate the auditory senses with {album_name} at maximum volume!
 Suggest a playlist by {artist_name} on {music_streaming_service} .
 Suggest a playlist by {artist_name} on {music_streaming_service} from {record_label} .
 Suggest a song by {artist_name} on {music_streaming_service} .
@@ -882,6 +1090,7 @@ Suggest a {playlist_name} by {artist_name} on {music_streaming_service} .
 Suggest a {record_label} playlist with {song_name} and {song_name} on {music_streaming_service} .
 Suggest a {record_label} {playlist_name} with {song_name} and {song_name} on {music_streaming_service} .
 Surprise me with a fresh tune.
+Surprise me with a random song.
 Surprise me with a song that's new to my ears.
 Surprise me with a tune I've never heard.
 Surprise me with an unfamiliar tune.
@@ -889,6 +1098,7 @@ Surprise me with an unheard melody.
 Surprise me with an unheard song.
 Surprise me with an unheard track.
 Surprise me with something I haven't heard before.
+Take it easy and cue up {song_name} by {artist_name} on {music_streaming_service}.
 Tell me more about {artist_name} .
 The latest album from {artist_name} has some incredible tracks.
 The latest release from {artist_name} showcases their evolution in the {music_genre} scene.
@@ -903,6 +1113,8 @@ Turn on a chosen music playlist.
 Turn on a laid-back music playlist.
 Turn on a music playlist.
 Turn on an invigorating music playlist.
+Ugh, find me a killer {playlist_name} on {music_streaming_service}.
+Undertake the listening experiment with {song_name} from {artist_name} on {music_streaming_service}.
 Unleash the power of music discovery with a randomly generated playlist.
 What are the top albums in {music_genre} on {music_streaming_service} ?
 What are the top albums in {music_genre} on {music_streaming_service} currently?
@@ -950,6 +1162,7 @@ What's your opinion on {song_name} by {artist_name} from the album {album_name} 
 What's your take on {artist_name} 's latest release, {album_name} ?
 What's your take on {song_name} by {artist_name} from the album {album_name} ?
 Who is the artist of {song_name} ?
+Why not play {song_name} by {artist_name} on {music_streaming_service}?
 listen to playlist {playlist_name}
 listen to something by {artist_name}
 listen to the album {album_name}

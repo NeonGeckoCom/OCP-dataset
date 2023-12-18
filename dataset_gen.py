@@ -91,12 +91,60 @@ def generate_samples():
                 print("bad template", t)
 
 
-dataset = list(generate_samples())
+def generate_balanced(n_per_label=1200):
+    counts = {l: 0 for l in templs if "generic_" not in l}
+    while not all((c>=n_per_label for c in counts.values())):
+        print(counts)
+        for media_type, templates in templs.items():
+            if media_type not in counts or counts[media_type] >= n_per_label:
+                continue
+            for t in templates:
+                t = t.rstrip(".!?,;:")
+                words = t.split()
+                slots = [w for w in words if w.startswith("{") and w.endswith("}")]
+                if slots and any(s[1:-1] not in ents for s in slots):
+                    continue
+                for ent, samples in ents.items():
+                    if ent in t:
+                        if not samples:
+                            break
+                        t = t.replace("{" + ent + "}", random.choice(samples))
+
+                if "{" not in t:
+                    yield media_type, t
+                    counts[media_type] += 1
+                    if counts[media_type] >= n_per_label:
+                        break
+                else:
+                    print("bad template", t)
+
+
+dataset = list(set(generate_samples()))
 
 with open("ocp_media_types_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
-        f.write(f"{label}, {sentence}\n")
+        label = label.strip()
+        f.write(f"{label},{sentence}\n")
+
+
+dataset = list(set(generate_balanced(1200)))
+
+with open("ocp_media_types_balanced_big_v0.csv", "w") as f:
+    f.write("label, sentence\n")
+    for label, sentence in set(dataset):
+        label = label.strip()
+        f.write(f"{label},{sentence}\n")
+
+
+dataset = list(set(generate_balanced(100)))
+
+with open("ocp_media_types_balanced_small_v0.csv", "w") as f:
+    f.write("label, sentence\n")
+    for label, sentence in set(dataset):
+        label = label.strip()
+        f.write(f"{label},{sentence}\n")
+
 
 # dedup files
 for root, folders, files in os.walk(os.path.dirname(__file__)):
@@ -112,9 +160,10 @@ for root, folders, files in os.walk(os.path.dirname(__file__)):
 with open("ocp_entities_v0.csv", "w") as f:
     f.write("label,entity\n")
     for label, samples in ents.items():
+        label = label.strip()
         if label == "radio_drama":
             label = "radio_drama_name"
         if label == "porn_site":
             label = "porn_streaming_service"
         for s in samples:
-            f.write(f"{label},{s}\n")
+            f.write(f"{label} ,{s}\n")

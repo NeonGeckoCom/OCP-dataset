@@ -1,10 +1,10 @@
 # pip install sparqlwrapper
 # https://rdflib.github.io/sparqlwrapper/
 import os.path
-import random
-import sys
 
+import random
 import regex
+import sys
 from SPARQLWrapper import SPARQLWrapper, JSON
 from unidecode import unidecode
 
@@ -64,6 +64,16 @@ ENTITIES = {
                 "Q3511312"  # radio drama
                 ]
     },
+
+    "podcaster": {
+        "P106": ["Q15077007"]
+    },
+    "radio_drama_actor": {
+        "P106": ["Q21280562"    ]
+    },
+   # "voice_actor": {
+   #     "P106": ["Q2405480"    ]
+  #  },
     "artist_name": {
         "P31": ["Q215380",  # bands
                 "Q56816954",  # metal bands
@@ -91,12 +101,14 @@ ENTITIES = {
                 "Q200092",  # horror film
                 "Q2484376",  # thriller film
                 "Q471839",  # scifi film
-                "Q517386", # live action
-                "Q188473", # action
-               # "Q28968258", # computer animated film
+                "Q517386",  # live action
+                "Q188473",  # action
+                # "Q28968258", # computer animated film
                 "Q848512"  # sound film / opposite of silent
                 ]
     },
+    "movie_actor": {"P106": ["Q10800557"]},
+    "movie_director": {"P106": ["Q2526255"]},
     "silent_movie_name": {
         "P31": ["Q226730"]
     },
@@ -213,7 +225,7 @@ ADULT = {
     "porn_film_name": {
         "P31": ["Q185529", "Q18956797", "Q62015757"]
     },
-    "porn_site": {
+    "porn_streaming_provider": {
         "P31": ["Q110643339"]
     },
     "hentai_name": {
@@ -344,4 +356,3 @@ for lang in LANGS:
             if len(titles):
                 with open(f"{base}/{ent}_{country}.entity", "w") as f:
                     f.write("\n".join(set(titles)))
-
