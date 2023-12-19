@@ -64,6 +64,11 @@ def load_templates(path, lang):
     return ents
 
 
+def load_not_ocp(path="ocp_sentences_v0.csv"):
+    with open(path) as f:
+        lines = f.read().split("\n")[1:]
+    return [l.split(",", 1)[-1] for l in lines if l.split(",")[0] != "OCP"]
+
 p = os.path.dirname(__file__)
 lang = "en"
 ents = load_entities(p, lang)
@@ -93,7 +98,7 @@ def generate_samples():
 
 def generate_balanced(n_per_label=1200):
     counts = {l: 0 for l in templs if "generic_" not in l}
-    while not all((c>=n_per_label for c in counts.values())):
+    while not all((c >= n_per_label for c in counts.values())):
         print(counts)
         for media_type, templates in templs.items():
             if media_type not in counts or counts[media_type] >= n_per_label:
@@ -125,6 +130,35 @@ with open("ocp_media_types_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
         label = label.strip()
+        if label in [ "iot_playback"]:
+            continue
+        f.write(f"{label},{sentence}\n")
+
+
+with open("ocp_playback_type_v0.csv", "w") as f:
+    f.write("label, sentence\n")
+    for label, sentence in set(dataset):
+        label = label.strip()
+        if label in ["game", "iot_playback"]:
+            label = "external"
+        elif label in ["movie", "bw_movie", "silent_movie", "trailer", "comic",
+                       "bts", "documentary", "anime", "hentai", "cartoon", "short_film",
+                       "adult", "video", "tv_channel", "series"]:
+            label = "video"
+        elif label in ["music", "podcast", "ad", "radio", "adult_asmr",
+                       "audio", "radio_drama", "audiobook"]:
+            label = "audio"
+        elif any(sentence.lower().startswith(w) for w in ["watch ", "view "]):
+            label = "video"
+        elif any(sentence.lower().startswith(w) for w in ["listen ", "tell me "]):
+            label = "audio"
+        elif any(w in sentence.lower().split() for w in ["tv", "youtube", "netflix", "channel", "video", "videos"]):
+            label = "video"
+        elif any(w in sentence.lower().split() for w in ["podcast", "radio", "spotify", "sound", "sounds", "audio"]):
+            label = "audio"
+        else:
+            print("bad label", label, sentence)
+            continue
         f.write(f"{label},{sentence}\n")
 
 
@@ -133,15 +167,18 @@ dataset = list(set(generate_balanced(1200)))
 with open("ocp_media_types_balanced_big_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
+        if label in [ "iot_playback"]:
+            continue
         label = label.strip()
         f.write(f"{label},{sentence}\n")
-
 
 dataset = list(set(generate_balanced(100)))
 
 with open("ocp_media_types_balanced_small_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
+        if label in [ "iot_playback"]:
+            continue
         label = label.strip()
         f.write(f"{label},{sentence}\n")
 
@@ -157,13 +194,28 @@ for root, folders, files in os.walk(os.path.dirname(__file__)):
         with open(f"{root}/{f}", "w") as fi:
             fi.write("\n".join(sorted(lines)))
 
+# skip these wikidata entries
+BAD_AUDIO = ["audio drama",
+             "audio podcast",
+             "audiobook",
+             "erotic audio recording",
+             "ASMR recording",
+             "ASMRotica",
+             "literary fiction audio recording",
+             "podcast",
+             "poetry audio recording",
+             "radio broadcast recording",
+             "radio drama",
+             "radio show recording"]
 with open("ocp_entities_v0.csv", "w") as f:
     f.write("label,entity\n")
     for label, samples in ents.items():
         label = label.strip()
+        if label == "audio":
+            samples = [s for s in samples if s not in BAD_AUDIO]
         if label == "radio_drama":
             label = "radio_drama_name"
         if label == "porn_site":
             label = "porn_streaming_service"
         for s in samples:
-            f.write(f"{label} ,{s}\n")
+            f.write(f"{label},{s}\n")
