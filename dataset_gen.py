@@ -5,13 +5,14 @@ from unidecode import unidecode
 
 
 def load_entities(path, lang):
-    ents = { }
+    ents = {}
 
     # non wikidata entity list - manually maintained by users
-    for e in os.listdir(f"{path}/manual_entities/{lang}"):
-        with open(f"{path}/manual_entities/{lang}/{e}") as f:
-            samples = f.read().split("\n")
-            ents[e.replace(".entity", "").split("_Q")[0]] = samples
+    if os.path.isdir(f"{path}/manual_entities/{lang}"):
+        for e in os.listdir(f"{path}/manual_entities/{lang}"):
+            with open(f"{path}/manual_entities/{lang}/{e}") as f:
+                samples = f.read().split("\n")
+                ents[e.replace(".entity", "").split("_Q")[0]] = samples
 
     # from sparql queries - auto generated
     for f in os.listdir(f"{path}/sparql_ocp/{lang}"):
@@ -68,6 +69,7 @@ def load_not_ocp(path="ocp_sentences_v0.csv"):
     with open(path) as f:
         lines = f.read().split("\n")[1:]
     return [l.split(",", 1)[-1] for l in lines if l.split(",")[0] != "OCP"]
+
 
 p = os.path.dirname(__file__)
 lang = "en"
@@ -130,10 +132,9 @@ with open("ocp_media_types_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
         label = label.strip()
-        if label in [ "iot_playback"]:
+        if label in ["iot_playback"]:
             continue
         f.write(f"{label},{sentence}\n")
-
 
 with open("ocp_playback_type_v0.csv", "w") as f:
     f.write("label, sentence\n")
@@ -161,13 +162,12 @@ with open("ocp_playback_type_v0.csv", "w") as f:
             continue
         f.write(f"{label},{sentence}\n")
 
-
 dataset = list(set(generate_balanced(1200)))
 
 with open("ocp_media_types_balanced_big_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
-        if label in [ "iot_playback"]:
+        if label in ["iot_playback"]:
             continue
         label = label.strip()
         f.write(f"{label},{sentence}\n")
@@ -177,11 +177,10 @@ dataset = list(set(generate_balanced(100)))
 with open("ocp_media_types_balanced_small_v0.csv", "w") as f:
     f.write("label, sentence\n")
     for label, sentence in set(dataset):
-        if label in [ "iot_playback"]:
+        if label in ["iot_playback"]:
             continue
         label = label.strip()
         f.write(f"{label},{sentence}\n")
-
 
 # dedup files
 for root, folders, files in os.walk(os.path.dirname(__file__)):
@@ -195,7 +194,7 @@ for root, folders, files in os.walk(os.path.dirname(__file__)):
             fi.write("\n".join(sorted(lines)))
 
 # skip these wikidata entries
-BAD_AUDIO = ["audio drama",
+BAD_AUDIO_EN = ["audio drama",
              "audio podcast",
              "audiobook",
              "erotic audio recording",
@@ -207,15 +206,52 @@ BAD_AUDIO = ["audio drama",
              "radio broadcast recording",
              "radio drama",
              "radio show recording"]
-with open("ocp_entities_v0.csv", "w") as f:
+
+# lang agnostic, names often not translated
+global_labels = [
+    "artist_name", "album_name",
+    "movie_actor", "movie_director",
+    "audiobook_narrator", "book_author",
+    "pornstar_name",
+
+    "news_streaming_service",
+    "music_streaming_service",
+    "audiobook_streaming_service",
+    "podcast_streaming_service",
+    "comic_streaming_service",
+    "porn_streaming_service",
+    "movie_streaming_service"
+]
+
+global_ents = {l: [] for l in global_labels}
+for lang in ["en", "ca", "pt", "es", "fr", "de", "uk", "gl", "ru", "da", "fi", "it"]:
+    ents = load_entities(p, lang)
+
+    with open(f"ocp_entities_{lang}_v0.csv", "w") as f:
+        f.write("label,entity\n")
+        for label, samples in ents.items():
+            if label == "radio_drama":
+                label = "radio_drama_name"
+            if label == "porn_site":
+                label = "porn_streaming_service"
+            if label == "generic_streaming_service":
+                continue
+            if label in global_labels:
+                global_ents[label] += samples
+                continue
+            samples = set(samples)
+            label = label.strip()
+            if label == "audio":
+                samples = [s for s in samples if s not in BAD_AUDIO_EN]
+            for s in samples:
+                if s:
+                    f.write(f"{label},{s}\n")
+
+
+with open(f"ocp_entities_names_v0.csv", "w") as f:
     f.write("label,entity\n")
-    for label, samples in ents.items():
-        label = label.strip()
-        if label == "audio":
-            samples = [s for s in samples if s not in BAD_AUDIO]
-        if label == "radio_drama":
-            label = "radio_drama_name"
-        if label == "porn_site":
-            label = "porn_streaming_service"
+    for label, samples in global_ents.items():
+        samples = set(samples)
         for s in samples:
-            f.write(f"{label},{s}\n")
+            if s:
+                f.write(f"{label},{s}\n")

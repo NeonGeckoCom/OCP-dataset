@@ -2,7 +2,7 @@ import random
 import json
 
 # OVOS datasets from https://github.com/OpenVoiceOS/ovos-datasets
-csv_path = f"/home/miro/PycharmProjects/OCP_sprint/OCP-dataset/dataset.csv"
+csv_path = f"/home/miro/PycharmProjects/OCP_sprint/OCP-dataset/ocp_media_types_balanced_big_v0.csv"
 q1 = f"/home/miro/PycharmProjects/OCP_sprint/OCP-dataset/yes_no.txt"
 q2 = "/home/miro/PycharmProjects/OCP_sprint/OCP-dataset/raw_questions_0.7.0a1.txt"
 q3 = "/home/miro/PycharmProjects/OCP_sprint/OCP-dataset/mycroft_simple_intents_v0.1.json"
